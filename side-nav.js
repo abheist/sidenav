@@ -2,7 +2,7 @@
 
 class SideNav {
     constructor () {
-        
+        console.log('SideNav');
     }
 }
 
