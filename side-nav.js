@@ -15,6 +15,7 @@ class SideNav {
     addEventListeners() {
         this.showButtonEl.addEventListener('click', this.showSideNav);
         this.hideButtonEl.addEventListener('click', this.hideSideNav);
+        this.sideNavEl.addEventListener('click', this.hideSideNav);
     }
 
     showSideNav() {
