@@ -66,10 +66,10 @@ html, body {
     transform: translateX(-102%)
 }
 
-.side-nav--visible .side-nav::before {
+.side-nav--visible::before {
     opacity: 1;
 }
 
 .side-nav--visible .side-nav__container {
-    
+    transform: none;
 }
