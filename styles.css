@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     background: #FAFAFA;
@@ -54,16 +55,18 @@ html, body {
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     opacity: 0;
-
+    transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
 }
 
 .side-nav__container {
     position: relative;
-    width: 30%;
+    width: 90%;
+    max-width: 400px;
     background: #FFF;
     height: 100%;
     box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
-    transform: translateX(-102%)
+    transform: translateX(-102%);
+    transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
 }
 
 .side-nav--visible::before {
@@ -72,4 +75,10 @@ html, body {
 
 .side-nav--visible .side-nav__container {
     transform: none;
+}
+
+.side-nav__hide {
+    position: absolute;
+    left: 16px;
+    top: 16px;
 }
