@@ -40,6 +40,10 @@ html, body {
     pointer-events: none;
 }
 
+.side-nav--visible {
+    pointer-events: auto;
+}
+
 .side-nav::before {
     content: '';
     display: block;
@@ -60,4 +64,12 @@ html, body {
     height: 100%;
     box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
     transform: translateX(-102%)
+}
+
+.side-nav--visible .side-nav::before {
+    opacity: 1;
+}
+
+.side-nav--visible .side-nav__container {
+    
 }
